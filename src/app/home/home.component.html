@@ -1,0 +1,25 @@
+<div class=a><p>home works!</p><br>
+    <br>
+    {{today}}
+firstName:<input type="text" id="fristName" value="{{name}}"><br>
+
+passportnum:<input type="text" id="passportnums" ><br>
+txtemail:<input type="text" id="txtemail" [(ngModel)]="surname">
+<input type="button" value="print" (click)="print($event)">
+</div>
+bank:{{bank|currency:'INR'}}<br>
+num:{{num|percent}}<br>
+{{todayDate }} <br><br>
+{{todayDate | date:'d/M/y'}} <br><br>
+{{todayDate | date:'shortTime'}}<br><br>
+<span *ngIf="status;"> its visble</span><br>
+<span *ngIf="status1;"> its visble</span><hr>
+<span *ngIf="stat;else condition1">hlo</span>
+<ng-template #condition1>ok</ng-template>
+<hr>
+
+<p *ngFor="let item of mobiles">{{item}}</p>
+<hr>
+<p *ngFor="let item of flower">{{item}}</p>
+<hr>
+ 

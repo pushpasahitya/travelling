@@ -1,0 +1,15 @@
+<div class="p">
+<h1> {{title}}</h1>
+firstName:<input type="text" id="fristName" value="{{name}}">
+secondName:<input type="text" id="secondName" value="{{name1}}">
+firstName:<input type="text" id="fristName" [(ngModel)] = "surname">
+Submit:<input type="button" value="Print"  (click)="print($event)"> <br>
+
+</div>
+
+<router-outlet>
+    <nav>
+        <a routerLink="/home"> Home</a>
+        <a routerLink="/clg">clg</a>
+    </nav>
+</router-outlet>
